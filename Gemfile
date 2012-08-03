@@ -8,7 +8,10 @@ gem 'pg','0.12.2'
 
 group :development, :test do
 	gem 'rspec-rails'
+    gem 'guard-rspec'
 end
+
+
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -26,6 +29,10 @@ gem 'jquery-rails'
 
 group :test do
 	gem 'capybara', '1.1.2'
+    gem 'rb-fsevent', '0.9.1', :require => false
+    gem 'growl'
+    gem 'guard-spork'
+    gem 'spork'
 end
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
