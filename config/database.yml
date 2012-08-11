@@ -1,10 +1,12 @@
 development: &development
+  host: localhost
   adapter: postgresql
   database: sample_app
   username: russell
   password: password
 
 test:
+  host: localhost
   adapter: postgresql
   database: sample_app_test
   username: russell
